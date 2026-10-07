@@ -1,0 +1,24 @@
+MEDICAL REPORT — UROLOGY / ONCOLOGY
+Patient ID: PR-2026-0410
+Age: 66 year-old male
+Date of collection: 2026-08-14
+
+CLINICAL SUMMARY
+Referred for evaluation of elevated PSA and urinary symptoms.
+
+LABORATORY FINDINGS
+PSA: 8.4 ng/mL          (ref < 4.0)
+Free/Total PSA ratio: 0.11
+Prostate volume: 58 mL   (transrectal ultrasound)
+Gleason score: 7 (3+4) on core biopsy
+Testosterone: 420 ng/dL
+ALP: 135 U/L
+Hemoglobin: 13.1 g/dL
+Creatinine: 1.0 mg/dL
+
+CLINICAL EXAM
+DRE: suspicious firm nodule right lobe.
+
+IMPRESSION
+Findings compatible with prostate adenocarcinoma. Recommend MRI PI-RADS
+staging and multidisciplinary review.

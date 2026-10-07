@@ -1,0 +1,20 @@
+GYNECOLOGY / CYTOLOGY REPORT
+Patient: CVX-2026-0155
+Age: 34 year-old female
+Sexual partners: 4
+First intercourse age: 17
+Pregnancies: 2
+Smokes: yes
+Hormonal contraceptives (years): 6
+IUD (years): 0
+STDs count: 2
+
+PAP SMEAR / CYTOLOGY
+Cytology: abnormal (HSIL, Bethesda)
+HPV testing: positive (HPV 16 high-risk)
+Schiller test: positive
+Colposcopy Dx CIN: 2
+
+IMPRESSION
+Cervical intraepithelial neoplasia grade 2 with high-risk HPV 16.
+Recommend LEEP conization and 3-month follow-up cytology.

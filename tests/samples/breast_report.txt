@@ -1,0 +1,26 @@
+BREAST FNA CYTOLOGY + BIOMARKER REPORT
+Patient: BR-2026-0512
+Age: 54 year-old female
+BRCA1: positive
+BRCA2: negative
+HER2: 3+
+ER: positive
+PR: positive
+Ki-67: 32 %
+CA 15-3: 42 U/mL      (ref < 30)
+
+Mammogram: BIRADS 4c, spiculated mass right upper outer quadrant, ~19 mm.
+Mean radius: 17.9
+Mean texture: 21.4
+Mean perimeter: 118.2
+Mean area: 995
+Mean smoothness: 0.108
+Mean compactness: 0.28
+Mean concavity: 0.31
+Mean concave points: 0.16
+Mean symmetry: 0.24
+Mean fractal dimension: 0.084
+
+IMPRESSION
+Findings consistent with invasive ductal carcinoma, HER2-enriched.
+Recommend core biopsy confirmation and oncologic staging.

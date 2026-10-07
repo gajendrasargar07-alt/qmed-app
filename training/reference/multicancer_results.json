@@ -1,0 +1,387 @@
+{
+  "breast": {
+    "Logistic Regression": {
+      "accuracy": 0.9683,
+      "precision": 0.9778,
+      "sensitivity": 0.9362,
+      "specificity": 0.9873,
+      "f1": 0.9565,
+      "roc_auc": 0.9968,
+      "threshold": 0.5,
+      "train_seconds": 0.12,
+      "early_threshold": 0.48
+    },
+    "Random Forest": {
+      "accuracy": 0.9683,
+      "precision": 1.0,
+      "sensitivity": 0.9149,
+      "specificity": 1.0,
+      "f1": 0.9556,
+      "roc_auc": 0.9943,
+      "threshold": 0.5,
+      "train_seconds": 0.39,
+      "early_threshold": 0.2
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9603,
+      "precision": 1.0,
+      "sensitivity": 0.8936,
+      "specificity": 1.0,
+      "f1": 0.9438,
+      "roc_auc": 0.996,
+      "threshold": 0.5,
+      "train_seconds": 0.4,
+      "early_threshold": 0.5
+    },
+    "Classical SVM (RBF)": {
+      "accuracy": 0.9841,
+      "precision": 1.0,
+      "sensitivity": 0.9574,
+      "specificity": 1.0,
+      "f1": 0.9783,
+      "roc_auc": 0.9954,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.6
+    },
+    "Quantum Kernel SVM": {
+      "accuracy": 0.9683,
+      "precision": 0.9574,
+      "sensitivity": 0.9574,
+      "specificity": 0.9747,
+      "f1": 0.9574,
+      "roc_auc": 0.9976,
+      "threshold": 0.5,
+      "train_seconds": 0.91,
+      "early_threshold": 0.52
+    },
+    "Variational Quantum Classifier": {
+      "accuracy": 0.7698,
+      "precision": 0.95,
+      "sensitivity": 0.4043,
+      "specificity": 0.9873,
+      "f1": 0.5672,
+      "roc_auc": 0.9197,
+      "threshold": 0.5,
+      "train_seconds": 187.34,
+      "early_threshold": 0.24
+    },
+    "Ensemble Consensus": {
+      "accuracy": 0.9841,
+      "precision": 1.0,
+      "sensitivity": 0.9574,
+      "specificity": 1.0,
+      "f1": 0.9783,
+      "roc_auc": 0.9976,
+      "threshold": 0.43
+    }
+  },
+  "lung": {
+    "Logistic Regression": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.95
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 0.37,
+      "early_threshold": 0.92
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9886,
+      "precision": 0.9753,
+      "sensitivity": 1.0,
+      "specificity": 0.9794,
+      "f1": 0.9875,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 0.29,
+      "early_threshold": 0.95
+    },
+    "Classical SVM (RBF)": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.95
+    },
+    "Quantum Kernel SVM": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 1.11,
+      "early_threshold": 0.95
+    },
+    "Variational Quantum Classifier": {
+      "accuracy": 0.9943,
+      "precision": 0.9875,
+      "sensitivity": 1.0,
+      "specificity": 0.9897,
+      "f1": 0.9937,
+      "roc_auc": 1.0,
+      "threshold": 0.5,
+      "train_seconds": 255.31,
+      "early_threshold": 0.54
+    },
+    "Ensemble Consensus": {
+      "accuracy": 0.9886,
+      "precision": 1.0,
+      "sensitivity": 0.9747,
+      "specificity": 1.0,
+      "f1": 0.9872,
+      "roc_auc": 1.0,
+      "threshold": 0.9
+    }
+  },
+  "prostate": {
+    "Logistic Regression": {
+      "accuracy": 0.9773,
+      "precision": 0.974,
+      "sensitivity": 0.974,
+      "specificity": 0.9798,
+      "f1": 0.974,
+      "roc_auc": 0.9992,
+      "threshold": 0.5,
+      "train_seconds": 0.01,
+      "early_threshold": 0.78
+    },
+    "Random Forest": {
+      "accuracy": 0.9886,
+      "precision": 0.987,
+      "sensitivity": 0.987,
+      "specificity": 0.9899,
+      "f1": 0.987,
+      "roc_auc": 0.9993,
+      "threshold": 0.5,
+      "train_seconds": 0.41,
+      "early_threshold": 0.72
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.983,
+      "precision": 1.0,
+      "sensitivity": 0.961,
+      "specificity": 1.0,
+      "f1": 0.9801,
+      "roc_auc": 0.999,
+      "threshold": 0.5,
+      "train_seconds": 0.26,
+      "early_threshold": 0.92
+    },
+    "Classical SVM (RBF)": {
+      "accuracy": 0.9716,
+      "precision": 0.9737,
+      "sensitivity": 0.961,
+      "specificity": 0.9798,
+      "f1": 0.9673,
+      "roc_auc": 0.998,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.84
+    },
+    "Quantum Kernel SVM": {
+      "accuracy": 0.9659,
+      "precision": 0.9494,
+      "sensitivity": 0.974,
+      "specificity": 0.9596,
+      "f1": 0.9615,
+      "roc_auc": 0.9941,
+      "threshold": 0.5,
+      "train_seconds": 1.13,
+      "early_threshold": 0.62
+    },
+    "Variational Quantum Classifier": {
+      "accuracy": 0.9602,
+      "precision": 1.0,
+      "sensitivity": 0.9091,
+      "specificity": 1.0,
+      "f1": 0.9524,
+      "roc_auc": 0.9945,
+      "threshold": 0.5,
+      "train_seconds": 307.18,
+      "early_threshold": 0.38
+    },
+    "Ensemble Consensus": {
+      "accuracy": 0.983,
+      "precision": 1.0,
+      "sensitivity": 0.961,
+      "specificity": 1.0,
+      "f1": 0.9801,
+      "roc_auc": 0.9992,
+      "threshold": 0.73
+    }
+  },
+  "colon": {
+    "Logistic Regression": {
+      "accuracy": 0.9943,
+      "precision": 0.9861,
+      "sensitivity": 1.0,
+      "specificity": 0.9905,
+      "f1": 0.993,
+      "roc_auc": 0.9999,
+      "threshold": 0.5,
+      "train_seconds": 0.01,
+      "early_threshold": 0.85
+    },
+    "Random Forest": {
+      "accuracy": 0.9943,
+      "precision": 0.9861,
+      "sensitivity": 1.0,
+      "specificity": 0.9905,
+      "f1": 0.993,
+      "roc_auc": 0.9999,
+      "threshold": 0.5,
+      "train_seconds": 0.39,
+      "early_threshold": 0.67
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9886,
+      "precision": 0.9859,
+      "sensitivity": 0.9859,
+      "specificity": 0.9905,
+      "f1": 0.9859,
+      "roc_auc": 0.9999,
+      "threshold": 0.5,
+      "train_seconds": 0.22,
+      "early_threshold": 0.95
+    },
+    "Classical SVM (RBF)": {
+      "accuracy": 0.983,
+      "precision": 0.9722,
+      "sensitivity": 0.9859,
+      "specificity": 0.981,
+      "f1": 0.979,
+      "roc_auc": 0.998,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.8
+    },
+    "Quantum Kernel SVM": {
+      "accuracy": 0.9773,
+      "precision": 0.9467,
+      "sensitivity": 1.0,
+      "specificity": 0.9619,
+      "f1": 0.9726,
+      "roc_auc": 0.9992,
+      "threshold": 0.5,
+      "train_seconds": 1.14,
+      "early_threshold": 0.73
+    },
+    "Variational Quantum Classifier": {
+      "accuracy": 0.8182,
+      "precision": 1.0,
+      "sensitivity": 0.5493,
+      "specificity": 1.0,
+      "f1": 0.7091,
+      "roc_auc": 0.993,
+      "threshold": 0.5,
+      "train_seconds": 255.09,
+      "early_threshold": 0.36
+    },
+    "Ensemble Consensus": {
+      "accuracy": 0.983,
+      "precision": 1.0,
+      "sensitivity": 0.9577,
+      "specificity": 1.0,
+      "f1": 0.9784,
+      "roc_auc": 0.9997,
+      "threshold": 0.75
+    }
+  },
+  "cervical": {
+    "Logistic Regression": {
+      "accuracy": 0.983,
+      "precision": 0.9839,
+      "sensitivity": 0.9683,
+      "specificity": 0.9912,
+      "f1": 0.976,
+      "roc_auc": 0.9989,
+      "threshold": 0.5,
+      "train_seconds": 0.01,
+      "early_threshold": 0.63
+    },
+    "Random Forest": {
+      "accuracy": 0.9716,
+      "precision": 0.9677,
+      "sensitivity": 0.9524,
+      "specificity": 0.9823,
+      "f1": 0.96,
+      "roc_auc": 0.9944,
+      "threshold": 0.5,
+      "train_seconds": 0.36,
+      "early_threshold": 0.51
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9716,
+      "precision": 0.9677,
+      "sensitivity": 0.9524,
+      "specificity": 0.9823,
+      "f1": 0.96,
+      "roc_auc": 0.9958,
+      "threshold": 0.5,
+      "train_seconds": 0.2,
+      "early_threshold": 0.55
+    },
+    "Classical SVM (RBF)": {
+      "accuracy": 0.9716,
+      "precision": 0.9833,
+      "sensitivity": 0.9365,
+      "specificity": 0.9912,
+      "f1": 0.9593,
+      "roc_auc": 0.9971,
+      "threshold": 0.5,
+      "train_seconds": 0.02,
+      "early_threshold": 0.43
+    },
+    "Quantum Kernel SVM": {
+      "accuracy": 0.9886,
+      "precision": 0.9841,
+      "sensitivity": 0.9841,
+      "specificity": 0.9912,
+      "f1": 0.9841,
+      "roc_auc": 0.9986,
+      "threshold": 0.5,
+      "train_seconds": 1.09,
+      "early_threshold": 0.56
+    },
+    "Variational Quantum Classifier": {
+      "accuracy": 0.9489,
+      "precision": 0.9821,
+      "sensitivity": 0.873,
+      "specificity": 0.9912,
+      "f1": 0.9244,
+      "roc_auc": 0.9978,
+      "threshold": 0.5,
+      "train_seconds": 257.47,
+      "early_threshold": 0.41
+    },
+    "Ensemble Consensus": {
+      "accuracy": 0.9773,
+      "precision": 0.9836,
+      "sensitivity": 0.9524,
+      "specificity": 0.9912,
+      "f1": 0.9677,
+      "roc_auc": 0.9975,
+      "threshold": 0.56
+    }
+  }
+}

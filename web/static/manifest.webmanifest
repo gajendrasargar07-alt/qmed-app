@@ -1,0 +1,13 @@
+{
+  "name": "QMed",
+  "short_name": "QMed",
+  "description": "Understand your medical report in plain language.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEF3F4",
+  "theme_color": "#0E6B73",
+  "icons": [
+    {"src": "/static/img/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/static/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

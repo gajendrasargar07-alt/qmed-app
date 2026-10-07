@@ -1,0 +1,28 @@
+CHEST CT + PULMONARY FUNCTION REPORT
+Patient: LNG-2026-0087
+Age: 68 year-old male, smoker
+Pack-years: 42
+
+RADIOLOGY (CT chest)
+Solitary pulmonary nodule right upper lobe, size 22 mm, spiculated margins.
+No mediastinal lymphadenopathy on this scan.
+Nodule size: 22 mm
+Spiculation: positive
+
+PULMONARY FUNCTION
+FEV1: 62 %
+
+TUMOR MARKERS
+CEA: 14.5 ng/mL         (ref < 5.0)
+CYFRA 21-1: 6.2 ng/mL   (ref < 3.3)
+NSE: 32 ng/mL           (ref < 16.3)
+
+HEMATOLOGY
+LDH: 340 U/L
+WBC: 9.1  x10^9/L
+Hemoglobin: 12.6 g/dL
+Platelets: 305 x10^9/L
+
+IMPRESSION
+Radiologic and biomarker profile highly suspicious for non-small-cell lung
+carcinoma (NSCLC). Recommend PET-CT and bronchoscopic biopsy.

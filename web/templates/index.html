@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0E6B73">
+  <meta name="description" content="Upload a lab or pathology report and get a plain-language read of what it shows.">
+  <title>QMed: understand your medical report</title>
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.webmanifest') }}">
+  <link rel="icon" href="{{ url_for('static', filename='img/icon.svg') }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icon-180.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body data-max-mb="{{ max_mb }}">
+<div class="app">
+  <header class="bar">
+    <a class="brand" href="/" aria-label="QMed home">
+      <img src="{{ url_for('static', filename='img/icon.svg') }}" alt="" width="30" height="30">
+      <span>QMed</span>
+    </a>
+    <button class="link-btn" id="aboutBtn" type="button">About</button>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="screen" id="screen-home">
+      <h1 class="display" tabindex="-1">Understand your medical report</h1>
+      <p class="lede">Upload a lab or pathology report and get a plain-language read of what it shows.</p>
+
+      <div class="drop" id="drop">
+        <svg class="drop-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+          <path d="M12 5h14l8 8v24a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M26 5v8h8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M22 31v-10m0 0l-4 4m4-4l4 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="drop-title">Add your report</p>
+        <p class="drop-hint hover-only">Drop a file here, or choose one.</p>
+        <div class="drop-actions">
+          <button class="btn" id="pickBtn" type="button">Choose a file</button>
+          <button class="btn secondary touch-only" id="cameraBtn" type="button">Take a photo</button>
+        </div>
+        <p class="fine">PDF, photo or text file, up to {{ max_mb }} MB.</p>
+        <input id="fileInput" type="file" hidden accept=".pdf,.txt,.png,.jpg,.jpeg,.tif,.tiff,.webp,.bmp,application/pdf,text/plain,image/*">
+        <input id="cameraInput" type="file" hidden accept="image/*" capture="environment">
+      </div>
+
+      <button class="link-btn block" id="pasteToggle" type="button" aria-expanded="false" aria-controls="pasteBox">Paste text instead</button>
+      <div class="paste" id="pasteBox" hidden>
+        <label class="sr-only" for="pasteText">Report text</label>
+        <textarea id="pasteText" rows="7" placeholder="Paste the text of your report here"></textarea>
+        <button class="btn" id="pasteGo" type="button">Analyse text</button>
+      </div>
+
+      <p class="supported">Works with breast, lung, prostate, colon and cervical reports.</p>
+
+      <section class="recent" id="recent" hidden aria-labelledby="recentTitle">
+        <div class="recent-head">
+          <h2 id="recentTitle">Recent on this device</h2>
+          <button class="link-btn" id="clearRecent" type="button">Clear</button>
+        </div>
+        <ul id="recentList"></ul>
+      </section>
+
+      <p class="fine foot">Your report is read in memory and is not saved on our servers. QMed gives information, not medical advice.</p>
+    </section>
+
+    <!-- Working -->
+    <section class="screen" id="screen-working" hidden>
+      <h1 class="display" tabindex="-1">Analysing your report</h1>
+      <p class="lede">This usually takes a few seconds.</p>
+      <ol class="steps" id="steps" aria-live="polite">
+        <li>Reading your report</li>
+        <li>Checking it's a medical report</li>
+        <li>Finding the report type</li>
+        <li>Running the analysis</li>
+      </ol>
+      <button class="link-btn block" id="cancelBtn" type="button">Cancel</button>
+    </section>
+
+    <!-- Result or message -->
+    <section class="screen" id="screen-result" hidden>
+      <div class="result-bar">
+        <button class="link-btn" id="backBtn" type="button">&larr; New report</button>
+        <button class="link-btn" id="saveBtn" type="button">Save as PDF</button>
+      </div>
+      <div id="resultBody"></div>
+    </section>
+  </main>
+</div>
+
+<dialog class="sheet" id="about" aria-labelledby="aboutTitle">
+  <div class="sheet-body">
+    <h2 id="aboutTitle">About QMed</h2>
+    <p>QMed reads lab and pathology reports and estimates how closely the values match patterns linked with five common cancers: breast, lung, prostate, colon and cervical.</p>
+    <h3>How it works</h3>
+    <ol class="plain-steps">
+      <li>It reads the text from your file, including scans and photos.</li>
+      <li>It checks that the file is a medical report and works out which type.</li>
+      <li>Six models score the values, four classical and two quantum.</li>
+      <li>The scores are combined into one result with a plain-language summary.</li>
+    </ol>
+    <h3>Keep in mind</h3>
+    <ul>
+      <li>Results are estimates, not a diagnosis. Only a doctor can diagnose.</li>
+      <li>A low score does not rule anything out.</li>
+      <li>The breast model was trained on a public clinical dataset. The lung, prostate, colon and cervical models were trained on simulated data built from published clinical ranges, so treat those results with extra caution.</li>
+    </ul>
+    <h3>Privacy</h3>
+    <p>Reports are analysed in memory and not saved. Recent results stay on this device and you can clear them any time.</p>
+    <p class="fine">Version {{ version }}</p>
+    <button class="btn" id="aboutClose" type="button">Close</button>
+  </div>
+</dialog>
+
+<dialog class="sheet" id="typeSheet" aria-labelledby="typeTitle">
+  <div class="sheet-body">
+    <h2 id="typeTitle">What type of report is this?</h2>
+    <p>Pick the right type and we'll run the analysis again.</p>
+    <div class="type-list" id="typeList"></div>
+    <button class="btn secondary" id="typeClose" type="button">Cancel</button>
+  </div>
+</dialog>
+
+<script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>

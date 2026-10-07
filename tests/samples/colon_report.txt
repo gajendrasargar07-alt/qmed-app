@@ -1,0 +1,24 @@
+COLONOSCOPY + LABORATORY REPORT
+Patient: COL-2026-0223
+Age: 61 year-old female
+Family history: positive (mother, colorectal at 68)
+
+COLONOSCOPY
+Sigmoid tubular adenoma with high-grade dysplasia, 22 mm, resected.
+FIT test: positive
+Family history: positive
+
+TUMOR MARKERS
+CEA: 12.8 ng/mL         (ref < 5.0)
+CA 19-9: 68 U/mL        (ref < 37)
+
+HEMATOLOGY / METABOLIC
+Hemoglobin: 10.4 g/dL   (low)
+WBC: 8.2  x10^9/L
+Albumin: 3.6 g/dL
+CRP: 14.0 mg/L
+BMI: 28.4
+
+IMPRESSION
+Findings suspicious for colorectal malignancy. Recommend CT abdomen/pelvis
+and multidisciplinary review.
